@@ -26,11 +26,12 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
+        
 
     - name: Install Dependencies
     - run: npm install
 
-      
-    - name: starting appplication
-    - run: npm start index.html
-    
+    - name: run main javascript
+    - run: ts-node main.js
+
+   
